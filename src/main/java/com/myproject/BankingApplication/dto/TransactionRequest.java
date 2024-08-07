@@ -1,0 +1,19 @@
+package com.myproject.BankingApplication.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class TransactionRequest {
+
+    private String toDebitAccountNumber;
+    private String toCreditAccountNumber;
+    private BigDecimal amount;
+}
